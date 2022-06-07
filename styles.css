@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 18px;
+}
+
+body {
+    background-color: hsl(0, 0%, 10%);
+    color: whitesmoke;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    margin: 1rem 0;
+    text-align: center;
+}
+
+main {
+    margin: 1rem auto;
+    padding: 1rem;
+    width: 90%;
+}
+
+p {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+
+button {
+    font-size: 1.5rem;
+    margin: 0 auto;
+    /* outline: none; */
+    border: 4px solid whitesmoke;
+    border-radius: 8px;
+    color: whitesmoke;
+    background-color: transparent;
+    line-height: 0;
+    width: 60px;
+    height: 60px;
+    padding: 0.5rem;
+    margin: 0.5rem;
+}
+
+button:hover {
+    background-color: hsl(190, 100%, 50%);
+    background-image: 
+    linear-gradient(to bottom right, hsl(190, 100%, 35%), hsl(190, 100%, 90%));
+    border-color: black;
+    color: black;
+    font-weight: bold;
+}
+
+button:active {
+    opacity: 0.5;
+}
+
+.button__wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+    gap: 1rem;
+}
+
+.button__clear {
+    padding: 1.5rem;
+    display: block;
+    margin: 0 auto;
+    width: auto;
+}
+
+.button__clear:hover {
+    background-color: hsl(50, 100%, 50%);
+    background-image: 
+    linear-gradient(to bottom right, hsl(50, 100%, 40%), hsl(50, 100%, 80%));
+}
+
+
+@media only screen and (min-width: 400px) {
+    html {
+        height: 100%;
+    }
+
+    body {
+        background-image: linear-gradient(to right bottom, hsl(0, 0%, 10%), hsl(0, 0%, 20%));
+    }
+
+    .counter__main {
+        width: 80%;
+        max-width: 600px;
+        margin: 2rem auto;
+        background-color: hsl(0, 0%, 10%);
+        border: 4px solid whitesmoke;
+        border-radius: 8px;
+    }}
